@@ -4,11 +4,11 @@ import colors from "@constants/colors";
 
 import { SetupPageType } from "@constants/pages";
 import { Ionicons, FontAwesome } from "@expo/vector-icons";
-import Home from "@screens/Home";
-import Explore from "@screens/Explore";
-import Cart from "@screens/Cart";
-import Offer from "@screens/Offer";
-import Account from "@screens/Account";
+import Home from "@screens/Bottom/Home";
+import Explore from "@screens/Bottom/Explore";
+import Cart from "@screens/Bottom/Cart";
+import Offer from "@screens/Bottom/Offer";
+import Account from "@screens/Bottom/Account";
 
 const Tab = createBottomTabNavigator();
 const BottomTabNavigator = () => {

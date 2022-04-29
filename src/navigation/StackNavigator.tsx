@@ -31,7 +31,7 @@ const AppStackNavigator = () => {
         <>
           <RootStack.Screen
             options={{ headerShown: false }}
-            name={SetupPageType.HOME}
+            name={SetupPageType.BOTTOMHOME}
             component={BottomTabNavigator}
           />
           <RootStack.Screen

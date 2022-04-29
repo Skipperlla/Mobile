@@ -12,7 +12,7 @@
       "@utils/*": ["./src/utils/*"],
       "types/*": ["src/@types/*"],
       "@store/*": ["./src/store/*"],
-      "@assets/*": ["./src/assets/*"],
+      "@assets/*": ["assets/*"],
       "@config/*": ["./src/config/*"]
     }
   }

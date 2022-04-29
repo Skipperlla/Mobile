@@ -9,7 +9,7 @@ import React, { FC, useState } from "react";
 import colors from "@constants/colors";
 import { FontAwesome5 } from "@expo/vector-icons";
 import LoginInput from "@components/Input/LoginInput";
-import Google from "@assets/icons/Google";
+import Google from "assets/icons/Google";
 import { useHeaderHeight } from "@react-navigation/elements";
 import { SetupPageType } from "@constants/pages";
 import Button from "@components/Button/Button";

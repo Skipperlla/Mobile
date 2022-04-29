@@ -27,6 +27,7 @@ export default StyleSheet.create({
 
     // Link Text
     linkText: { fontFamily: "Poppins_700Bold", fontSize: bodyText.normal, letterSpacing, color: colors.primary, },
+    linkMediumText: { fontFamily: "Poppins_700Bold", fontSize: bodyText.medium, letterSpacing, color: colors.primary, },
 
 
 });

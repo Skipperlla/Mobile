@@ -20,6 +20,7 @@ const captionText = {
 }
 const letterSpacing = 0.5
 const iconSize = 24
+const globalPadding = 16
 const windowHeight = Dimensions.get("window").height;
 
-export { windowWidth, iconSize, letterSpacing, windowHeight, heading, bodyText, captionText };
+export { windowWidth, iconSize, letterSpacing, windowHeight, heading, bodyText, captionText, globalPadding };

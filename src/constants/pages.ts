@@ -9,6 +9,7 @@ export enum SetupPageType {
     OFFER = "Offer",
     ACCOUNT = "Account",
     // Stacks
+    BOTTOMHOME = "BottomHome",
     FAVORITE = "Favorite",
     NOTIFICATION = "Notification"
 
@@ -26,5 +27,6 @@ export const pages: SetupPageType[] = [
     SetupPageType.ACCOUNT,
     // Stacks
     SetupPageType.FAVORITE,
+    SetupPageType.BOTTOMHOME,
     SetupPageType.NOTIFICATION,
 ];
