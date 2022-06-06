@@ -1,35 +1,27 @@
 import React, { useContext } from "react";
 import { createStackNavigator } from "@react-navigation/stack";
-import AuthContext from "@utils/context/AuthContext";
-import { SetupPageType } from "@constants/pages";
+import { SetupPageType } from "@utils/pages";
 import { IStackNavigator } from "types/navigation";
-import Login from "@screens/Login";
-import Register from "@screens/Register";
-import BottomTabNavigator from "./BottomTabNavigator";
-import Notification from "@screens/Notification";
-import Favorite from "@screens/Favorite";
+// * Screens
+import { Auth } from "@screens/index";
 
 const RootStack = createStackNavigator<IStackNavigator>();
 
 const AppStackNavigator = () => {
-  const { isLoggedIn } = useContext(AuthContext);
-
+  const { LOGIN, REGISTER } = SetupPageType;
   return (
     <RootStack.Navigator>
-      {false ? (
+      {true ? (
         // Auth Screens
         <RootStack.Group
           screenOptions={{ headerShown: false, gestureEnabled: false }}
         >
-          <RootStack.Screen name={SetupPageType.LOGIN} component={Login} />
-          <RootStack.Screen
-            name={SetupPageType.REGISTER}
-            component={Register}
-          />
+          <RootStack.Screen name={LOGIN} component={Auth.Login} />
+          <RootStack.Screen name={REGISTER} component={Auth.Register} />
         </RootStack.Group>
       ) : (
         <>
-          <RootStack.Screen
+          {/* <RootStack.Screen
             options={{ headerShown: false }}
             name={SetupPageType.BOTTOMHOME}
             component={BottomTabNavigator}
@@ -41,7 +33,7 @@ const AppStackNavigator = () => {
           <RootStack.Screen
             name={SetupPageType.FAVORITE}
             component={Favorite}
-          />
+          /> */}
         </>
       )}
     </RootStack.Navigator>

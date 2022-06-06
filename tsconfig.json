@@ -4,16 +4,14 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
+      "types/*": ["./src/@types/*"],
+      "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
-      "@constants/*": ["./src/constants/*"],
-      "@styles/*": ["./src/styles/*"],
+      "@lang/*": ["./src/lang/*"],
       "@navigation/*": ["./src/navigation/*"],
       "@screens/*": ["./src/screens/*"],
-      "@utils/*": ["./src/utils/*"],
-      "types/*": ["src/@types/*"],
       "@store/*": ["./src/store/*"],
-      "@assets/*": ["assets/*"],
-      "@config/*": ["./src/config/*"]
+      "@utils/*": ["./src/utils/*"]
     }
   }
 }

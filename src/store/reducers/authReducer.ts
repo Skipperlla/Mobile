@@ -1,13 +1,13 @@
-import { Auth, AuthAction, AuthState } from "../../@types/auth";
-const defaultState: AuthState = {
-  Auth: {} as Auth,
+// import { Auth, AuthAction, AuthState } from "../../@types/auth";
+const defaultState = {
+  Auth: {},
   loading: false,
   error: "",
   success: "",
   status: null,
 };
 
-const authReducer = (state = defaultState, action: AuthAction) => {
+const AuthReducer = (state = defaultState, action: AuthAction) => {
   switch (action.type) {
     case "USER_NAME_CHECK_START":
       return { ...state, loading: true, error: "", success: "" };
@@ -28,12 +28,11 @@ const authReducer = (state = defaultState, action: AuthAction) => {
         success: "",
       };
     case "USER_NAME_CHECK_RESET":
-      return { ...state, loading: false, error: "", success: "", };
-
+      return { ...state, loading: false, error: "", success: "" };
 
     default:
       return state;
   }
 };
 
-export default authReducer;
+export default AuthReducer;

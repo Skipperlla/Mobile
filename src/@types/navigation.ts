@@ -1,5 +1,5 @@
 import type { StackScreenProps } from "@react-navigation/stack";
-import { SetupPageType } from "@constants/pages";
+import { SetupPageType } from "@utils/pages";
 
 
 export type IStackNavigator = {
